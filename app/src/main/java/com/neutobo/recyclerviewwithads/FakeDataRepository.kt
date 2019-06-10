@@ -8,17 +8,18 @@ class FakeDataRepository {
     private val listOfData: MutableList<Thing> = ArrayList()
 
     private fun createFakeData() {
-        for (i in 1..100) {
-            // if it's an Ad, insert one, and continue adding items
-            if (i % 4 == 0) {
-                listOfData.add(AdPlaceholder())
-            }
+        for (i in 1..1000) {
 
             // add green and purple things
             if (i % 3 == 0) {
                 listOfData.add(Thing(i, "This is Item $i", ThingType.PURPLE))
             } else {
                 listOfData.add(Thing(i, "This is Item $i", ThingType.GREEN))
+            }
+
+            // Add "Ad" where they belong
+            if (i % 4 == 0) {
+                listOfData.add(AdPlaceholder())
             }
         }
     }
