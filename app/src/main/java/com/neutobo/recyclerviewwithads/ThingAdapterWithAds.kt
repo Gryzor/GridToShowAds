@@ -12,9 +12,9 @@ import com.neutobo.recyclerviewwithads.model.Thing
 
 class ThingAdapterWithAds : ListAdapter<Thing, RecyclerView.ViewHolder>(DiffUtilCallback()) {
 
-    private val viewTypeGreen = 0
-    private val viewTypePurple = 1
-    private val viewTypeAd = 2
+    internal val viewTypeGreen = 0
+    internal val viewTypePurple = 1
+    internal val viewTypeAd = 2
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): RecyclerView.ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
