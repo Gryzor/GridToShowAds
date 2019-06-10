@@ -19,3 +19,4 @@ experiment if this still works, etc.
 But if you receive a list of data, and have a GridLayout displaying two columns in portrait (for example), then this method will allow
 you to insert a view that "spans" both columns whenever you want (based on Type).
 
+![This is how it looks](https://github.com/Gryzor/GridToShowAds/blob/master/grid_sample.png)
