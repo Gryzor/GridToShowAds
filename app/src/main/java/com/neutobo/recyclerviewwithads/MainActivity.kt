@@ -30,6 +30,9 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-        adapter.submitList(repository.getData())
+        val data = repository.getData()
+        adapter.submitList(data)
+
+        click_me.setOnClickListener { mainRecyclerView.smoothScrollToPosition(data.size) }
     }
 }
