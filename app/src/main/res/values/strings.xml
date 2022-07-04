@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">RecyclerViewWithAds</string>
     <string name="i_am_an_ad">I am an Ad!</string>
+    <string name="swap_layouts">Swap Layouts</string>
 </resources>
